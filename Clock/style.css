@@ -1,0 +1,81 @@
+html{
+    
+    text-align: center;
+    font-size: 10px;
+}
+
+body{
+    background-image: linear-gradient(rgb(2, 2, 68) , rgb(0, 0, 53) , transparent);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: max-content;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    background-image: linear-gradient(rgb(0, 225, 255) , rgb(0, 255, 242));
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    rotate: 90deg;
+    transform-origin: 100%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1 , 2.7 , 0.58 ,1);
+}
+
+.hour-sec{
+    background-color: rgb(225, 255, 0);
+}
+
+.hour-min{
+    background-color: rgb(255, 0, 0);
+}
+
+.hour-hand{
+    background-color: rgb(255, 0, 140);
+}
+
+button{
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 100px;
+    transition: 0.4s;
+}
+
+button:hover{
+    scale: 1.2;
+    background-image: linear-gradient(navy , blue);
+    color: rgb(212, 80, 80); 
+}

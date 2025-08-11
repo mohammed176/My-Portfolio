@@ -1,0 +1,19 @@
+
+#colorflipper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+}
