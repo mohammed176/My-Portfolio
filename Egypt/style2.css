@@ -1,0 +1,31 @@
+*{
+    font-family: serif;
+}
+body{
+    background-color: coral;
+}
+
+header{
+    background-color: rgb(236, 124, 124);
+    border: solid;
+    border-radius: 9px;
+    margin-bottom: 50px;
+}
+
+nav ul li{
+    display: inline;
+    padding-left: 100px;
+    margin: 80px;
+}
+
+.h2{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+    color: aquamarine;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}

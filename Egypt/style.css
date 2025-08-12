@@ -1,0 +1,97 @@
+*{
+    font-family: serif;
+}
+body{
+    background-color: coral;
+}
+
+header{
+    background-color: rgb(236, 124, 124);
+    border: solid;
+    border-radius: 9px;
+    margin-bottom: 50px;
+}
+
+nav ul li{
+    display: inline;
+    padding-left: 100px;
+    margin: 80px;
+}
+
+.h2{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+    color: aquamarine;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+    display: inline-block;
+}
+
+/*home.html*/
+
+.h1{
+    color: chocolate;
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.ol li {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+    color: #fff;
+}
+
+.pyramids-p , .khan-elkhalili-p {
+    color: chocolate;
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*attractions.html*/
+
+#k-p , #f-p {
+    color: rgb(0, 255, 42);
+    font-size: 70px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*food.html*/
+
+.egyptian-artists{
+    text-align: center;
+    color: rgb(0, 102, 255);
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+table{
+    background-color: blue;
+    margin: 50PX;
+    padding: 40px;
+    border: solid red dotted ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    color: rgb(215, 57, 144);
+    font-size: 3em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+th{
+    color: rgb(2, 4, 47);
+    font-size: 3.9em;
+    font-weight: 900;
+    font-style: italic;
+}

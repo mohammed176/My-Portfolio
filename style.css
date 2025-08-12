@@ -330,6 +330,21 @@ main {
   margin: auto;
 }
 
+.a-card {
+ width: 99%;
+ height: 60px;
+ border-radius: 10px;
+ background: linear-gradient(#000033, #00004d, #00004d);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+.a-card span{
+    font-size: 30px;
+    color: white;
+}
+
 
 #sectRow {
   width: 100%;

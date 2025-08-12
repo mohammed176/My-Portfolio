@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+
+  <meta name="author" content="Mohamed">
+  <meta name="description" content="#">
+  <meta name="keywords" content="#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>M-DEV</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <link rel="icon" href="IMGS/Preview-removebg-preview (1).png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    
+* {
+  box-sizing: content-box;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Readex Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "HEXP" 0;
+  white-space: nowrap;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background: linear-gradient(#000033, #00004d, #00004d);
+}
+
+#sectRow {
+  display: flex;
+  flex-direction: row;    
+  justify-content: space-evenly; 
+  align-items: flex-start;    
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+.sectcard {
+  width: 270px;
+  height: 304px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 15px;
+  transition: 1s;
+  margin: 60px;
+}
+
+.sectcard:hover{
+  scale: 1.1;
+}
+
+.sectcard p  {
+  z-index: 1;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  white-space: wrap;
+}
+.sectcard span,
+.sectcard i {
+  z-index: 1;
+  color: white;
+  font-size: 2.5em;
+}
+
+.sectcard::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.sectcard::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+.middle{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 130px;
+}
+
+.middle span{  
+  z-index: 1;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  white-space: wrap;
+}
+
+.cardFooter{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.cardFooter a{
+  font-size: 2px;
+  background-color: #ffffff;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  text-align: center;
+  white-space: wrap;
+  text-decoration: none;
+  width: 100px;
+  border-radius: 100px;
+  transition: 1s;
+  margin: 10px;
+}
+
+
+.cardFooter a:hover{
+  scale: 1.2;
+}
+
+a{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    width: 130px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    transition: 1s;
+    margin: 50px;
+}
+a:hover{
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+@media (max-height:1100px) {
+  body{
+    height: max-content;
+    overflow-x: hidden;
+  }
+}
+  </style>
+</head>
+</head>
+<body>
+  
+    <a href="index.html">Return</a>
+      <h1 class="sect-header text-center mb-4" >Python</h1>
+         <div id="sectRow">
+      <div class="sectcard">
+        <i class="fa-brands fa-python"></i>
+        <div class="middle">
+          <span>Calc</span>
+          <span>PY</span>
+        </div>
+        <div class="cardFooter">
+          <a href="https://www.onlinegdb.com/hBQP7al1dw" target="_blank">open</a>
+          <a href="READ/index.html" target="_blank">Read</a>
+        </div>
+      </div>
+
+      <div class="sectcard">
+        <i class="fa-brands fa-python"></i>
+        <div class="middle">
+          <span class style="width: 10%;">Cashier</span>
+          <span class>PY</span>
+        </div>
+        <div class="cardFooter">
+          <a href="https://www.onlinegdb.com/0YyrDvfF5" target="_blank">open</a>
+          <a href="READ/index4.html" target="_blank">Read</a>
+        </div>
+      </div>
+    </div>
+    <h1 class="sect-header text-center mb-4" >scratch</h1>
+    <div id="sectRow">
+      <div class="sectcard">
+        <img src="IMGS/icons8-scratch-100.png" alt="" width="50" style="z-index: 1;">
+        <div class="middle">
+          <span style="width: 10%;">frog</span>
+          <span>scratch</span>
+        </div>
+        <div class="cardFooter">
+          <a href="https://scratch.mit.edu/projects/1205904799" target="_blank">open</a>
+          <a href="READ/index4.html" target="_blank">Read</a>
+        </div>
+      </div>
+
+      <div class="sectcard">
+        <img src="IMGS/icons8-scratch-100.png" alt="" width="50" style="z-index: 1;">
+        <div class="middle">
+          <span class style="width: 10%;">cards</span>
+          <span class>scratch</span>
+        </div>
+        <div class="cardFooter">
+          <a href="https://scratch.mit.edu/projects/1205905127" target="_blank">open</a>
+          <a href="READ/index6.html" target="_blank">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="sect-header text-center mb-4" >CSS</h1>
+    <div id="sectRow">
+      <div class="sectcard">
+        <i class="fa-brands fa-css3-alt"></i>
+        <div class="middle">
+          <span style="width: 10%;">Egypt</span>
+          <span>CSS</span>
+        </div>
+        <div class="cardFooter">
+          <a href="Egypt/home.html" target="_blank">open</a>
+          <a href="READ/index7.html" target="_blank">Read</a>
+        </div>
+      </div>
+
+      <div class="sectcard">
+        <i class="fa-brands fa-css3-alt"></i>
+        <div class="middle">
+          <span class style="width: 10%;">Portfolio</span>
+          <span class>CSS</span>
+        </div>
+        <div class="cardFooter">
+          <a href="myPortfolio-1/index.html" target="_blank">open</a>
+          <a href="READ/index8.html" target="_blank">Read</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
+
+<!--
+
+   links
+   1.https://scratch.mit.edu/projects/1205904799
+   2.https://scratch.mit.edu/projects/1205905127
+   read
+   1.index4
+   2index6
+    -->
