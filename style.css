@@ -319,16 +319,6 @@ main {
   margin: auto;
 }
 
-#s-row{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-
 
 #sectRow {
   display: flex;
@@ -439,6 +429,7 @@ main {
   transition: 1s;
   margin: 10px;
 }
+
 
 
 .cardFooter a:hover{
