@@ -1,4 +1,17 @@
+:root{
+  --buttons: rgb(0, 0, 0);
+  --buttons2: rgb(255, 255, 255);
 
+  --bg: linear-gradient(#ffffff, #ffffff, #ffffff);
+  --bg2: linear-gradient(#000033, #00004d, #00004d);;
+  --bg3:linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
+  --bg4: black;
+
+  --textColor: rgb(0, 0, 0);
+  --textColor2: rgb(255, 255, 255);
+  --textColor3: #000068;
+  
+}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -15,17 +28,27 @@
   white-space: nowrap;
 }
 
+.lightkmode{
+  --textColor: rgb(0, 0, 0);
+  --textColor3: #000068;
+
+  --bg2: linear-gradient(#000033, #00004d, #00004d);;
+  --bg3:linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
+
+  --buttons: rgb(0, 0, 0);
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: max-content;
-  background: linear-gradient(#000033, #00004d, #00004d);
+  background: var(--bg2);
 }
 
 nav {
-  background-color: white;
+  background-color: var(--textColor2);
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -44,6 +67,38 @@ nav {
   gap: 1.2rem;
   padding-left: 0;
   margin-bottom: 0;
+}
+
+#theameSwitch{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--textColor3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+#theameSwitch i{
+  color: var(--buttons2);
+}
+
+#theameSwitch:hover{
+  scale: 1.1;
+}
+
+#theameSwitch i:last-child{
+  display: none;
+}
+
+#theameSwitch i:first-child{
+  display: block;
+}
+
+.lightkmode #theameSwitch i:first-child{
+  display: block;
 }
 
 #sun-lang {
@@ -72,7 +127,6 @@ nav {
 
 main {
   width: 100%;
-  border: white;
   border: solid;
   background-repeat: no-repeat;
   padding: 90px;
@@ -105,17 +159,17 @@ main {
 
 .hs h2 {
   font-size: 70px;
-  color: white;
+  color: var(--textColor2);
 }
 
 .hs h1 {
   font-size: 110px;
-  color: white;
+  color: var(--textColor2);
 }
 
 .hs span {
   font-size: 60px;
-  color: white;
+  color: var(--textColor2);
 }
 
 .buttons {
@@ -133,11 +187,11 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--textColor2);
   padding: 10px;
   border-radius: 100px;
   overflow: hidden;
-  width: 300px;
+  width: 400px;
   transition: 1s;
   scale: 1;
 }
@@ -149,7 +203,7 @@ main {
 .button a {
   font-size: 50px;
   text-decoration: none;
-  color: #000068;
+  color: var(--textColor3);
   text-align: center;
 }
 
@@ -211,11 +265,10 @@ main {
     width: auto;
   }
   .button {
-    width: 200px;
     margin-top: 40px;
     padding: 10px;
     border-radius: 100px;
-    background-color: white;
+    background-color: var(--textColor);
     overflow: hidden;
     transition: transform 0.4s;
     transform: scale(1);
@@ -285,7 +338,6 @@ main {
     font-size: 28px;
   }
   .buttons {
-    width: auto;
     gap: 12px;
     margin-top: 10px;
     transition: 1s;
@@ -320,11 +372,11 @@ main {
 .sect-header{
   text-align: center;
   font-size: 80px;
-  color: white;
+  color: var(--textColor2);
 }
 
 #info{
-  background-color: white;
+  background-color: var(--textColor2);
   border-radius: 20px;
   width: max-content;
   margin: auto;
@@ -334,7 +386,7 @@ main {
  width: 99%;
  height: 60px;
  border-radius: 10px;
- background: linear-gradient(#000033, #00004d, #00004d);
+ background: var(--bg2);
  display: flex;
  align-items: center;
  justify-content: center;
@@ -342,7 +394,7 @@ main {
 }
 .a-card span{
     font-size: 30px;
-    color: white;
+    color: var(--textColor);
 }
 
 
@@ -361,7 +413,7 @@ main {
 .sectcard {
   width: 270px;
   height: 304px;
-  background: #07182E;
+  background: var(--textColor3);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -381,7 +433,7 @@ main {
 
 .sectcard p  {
   z-index: 1;
-  color: white;
+  color: var(--textColor2);
   font-size: 1.5em;
   text-align: center;
   white-space: wrap;
@@ -392,7 +444,7 @@ main {
 .sectcard span,
 .sectcard i {
   z-index: 1;
-  color: white;
+  color: var(--textColor2);
   font-size: 2.5em;
 }
 
@@ -400,7 +452,7 @@ main {
   content: '';
   position: absolute;
   width:  100%;
-  background-image: linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
+  background-image: var(--bg3);
   height: 130%;
   animation: rotBGimg 3s linear infinite;
   transition: all 1s linear;
@@ -414,7 +466,7 @@ main {
 .sectcard::after {
   content: '';
   position: absolute;
-  background: #07182E;
+  background: var(--bg2);
   inset: 5px;
   border-radius: 15px;
 }
@@ -428,7 +480,7 @@ main {
 
 .middle span{  
   z-index: 1;
-  color: white;
+  color: var(--textColor2);
   font-size: 1.5em;
   text-align: center;
   white-space: wrap;
@@ -444,7 +496,7 @@ main {
 
 .cardFooter a{
   font-size: 2px;
-  background-color: #ffffff;
+  background-color: var(--textColor2);
   z-index: 1;
   color: rgb(0, 0, 0);
   font-size: 1.5em;
@@ -464,73 +516,13 @@ main {
 
 
 
-.Acard {
- --background: linear-gradient(to left, #11003f 0%, #041d5e 100%);
- margin: auto;
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- padding: 5px;
- border-radius: 1rem;
- overflow: visible;
- background: #050154;
- background: var(--background);
- position: relative;
- z-index: 1;
-}
-
-.Acard::after {
- position: absolute;
- content: "";
- top: 30px;
- left: 0;
- right: 0;
- z-index: -1;
- height: 100%;
- width: 100%;
- transform: scale(0.8);
- filter: blur(25px);
- background: #051041;
- background: var(--background);
- transition: opacity .5s;
-}
-
-.card-info {
- --color: #181818;
- background: var(--color);
- color: var(--color);
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
- height: 100%;
- overflow: visible;
- border-radius: .7rem;
-}
-
-.Acard .title {
-  color: white;
- font-weight: bold;
- letter-spacing: .1em;
-}
-
-
-.Acard:hover::after {
- opacity: 0;
-}
-
-.Acard:hover .Acard-info {
- color: #070151;
- transition: color 1s;
-}
 
 
 footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--bg4);
   padding: 10px;
   font-size: 30px;
   overflow: hidden;
@@ -538,16 +530,16 @@ footer{
 }
 
 footer span{
-  color: #3a6cfc;
+  color: var(--buttons2);
 }
 
 footer span span{
-  color: white;
+  color: var(--textColor2);
 }
 
 #sm{
-  background-color: black;
-    color: white;
+  background-color: var(--bg4);
+    color: var(--buttons2);
     font-size: 30px;
     width: 190px;
     text-decoration: none;
@@ -562,6 +554,6 @@ footer span span{
 
 #sm:hover{
   scale: 1.1;
-    background-color: white;
-    color: black;
+    background-color: var(--buttons2);
+    color: var(--bg4);
 }
