@@ -1,25 +1,12 @@
-:root{
-  --buttons: rgb(0, 0, 0);
-  --buttons2: rgb(255, 255, 255);
+/* =============================
+   ✨ Normal State (بدون :root)
+   ============================= */
 
-  --bg: linear-gradient(#ffffff, #ffffff, #ffffff);
-  --bg2: linear-gradient(#000033, #00004d, #00004d);;
-  --bg3:linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
-  --bg4: black;
-
-  --textColor: rgb(0, 0, 0);
-  --textColor2: rgb(255, 255, 255);
-  --textColor3: #000068;
-  
-}
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-transform: capitalize;
   text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-family: "Readex Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -28,27 +15,17 @@
   white-space: nowrap;
 }
 
-.lightkmode{
-  --textColor: rgb(0, 0, 0);
-  --textColor3: #000068;
-
-  --bg2: linear-gradient(#000033, #00004d, #00004d);;
-  --bg3:linear-gradient(180deg, rgb(0,183,255), rgb(255,48,255));
-
-  --buttons: rgb(0, 0, 0);
-}
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: max-content;
-  background: var(--bg2);
+  background: linear-gradient(#000033, #00004d, #00004d);
 }
 
 nav {
-  background-color: var(--textColor2);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -69,35 +46,30 @@ nav {
   margin-bottom: 0;
 }
 
-#theameSwitch{
+#theameSwitch {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: var(--textColor3);
+  background-color: #000068;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   transition: 1s;
 }
 
-#theameSwitch i{
-  color: var(--buttons2);
+#theameSwitch i {
+  color: rgb(255, 255, 255);
 }
 
-#theameSwitch:hover{
+#theameSwitch:hover {
   scale: 1.1;
 }
 
-#theameSwitch i:last-child{
+#theameSwitch i:last-child {
   display: none;
 }
 
-#theameSwitch i:first-child{
-  display: block;
-}
-
-.lightkmode #theameSwitch i:first-child{
+#theameSwitch i:first-child {
   display: block;
 }
 
@@ -111,23 +83,8 @@ nav {
   flex-wrap: nowrap;
 }
 
-@media (max-width: 992px) {
-  nav {
-    height: max-content;
-  }
-  #center-sun {
-    text-align: center;
-    margin: auto;
-  }
-  #sun-lang {
-    text-align: center;
-  }
-}
-
-
 main {
   width: 100%;
-  border: solid;
   background-repeat: no-repeat;
   padding: 90px;
   padding-bottom: 80px;
@@ -159,17 +116,17 @@ main {
 
 .hs h2 {
   font-size: 70px;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
 }
 
 .hs h1 {
   font-size: 110px;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
 }
 
 .hs span {
   font-size: 60px;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
 }
 
 .buttons {
@@ -184,10 +141,9 @@ main {
 .button {
   margin-top: 80px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--textColor2);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 100px;
   overflow: hidden;
@@ -203,7 +159,7 @@ main {
 .button a {
   font-size: 50px;
   text-decoration: none;
-  color: var(--textColor3);
+  color: #000068;
   text-align: center;
 }
 
@@ -212,154 +168,12 @@ main {
   text-align: center;
 }
 
-/* Best-practice, clean, non-conflicting media queries for your design */
+/* =============================
+   📌 Sections
+   ============================= */
 
-/* Tablet & iPad (width: 1024px) */
-@media only screen and (min-width: 992px) and (max-width: 1099px) {
-  .hs {
-    padding-bottom: 1px;
-  }
-  .hs h2 {
-    font-size: 50px;
-  }
-  .hs h1 {
-    font-size: 80px;
-  }
-  .hs span {
-    font-size: 50px;
-  }
-  .buttons {
-    gap: 90px;
-    flex-direction: row;
-    margin-top: 10px;
-  }
-  .button {
-    transform: scale(1.0);
-  }
-  .button:hover {
-    transform: scale(1.15);
-  }
-  .sect-header{
-    font-size: 23px;
-  }
-}
-
-/* Medium tablets (width: 820px) */
-@media only screen and (min-width: 800px) and (max-width: 899px) {
-  .hs {
-    padding-bottom: 1px;
-  }
-  .hs h2 {
-    font-size: 35px;
-  }
-  .hs h1 {
-    font-size: 53px;
-  }
-  .hs span {
-    font-size: 35px;
-  }
-  .buttons {
-    gap: 40px;
-    flex-direction: row;
-    margin-top: 10px;
-    width: auto;
-  }
-  .button {
-    margin-top: 40px;
-    padding: 10px;
-    border-radius: 100px;
-    background-color: var(--textColor);
-    overflow: hidden;
-    transition: transform 0.4s;
-    transform: scale(1);
-  }
-  .button:hover {
-    transform: scale(1.15);
-  }
-  .sect-header{
-    font-size: 27px;
-  }
-}
-
-/* Large screens (up to 1200px) */
-@media only screen and (max-width: 1200px) {
-  .hs {
-    padding-bottom: 1px;
-  }
-  .hs h2 {
-    font-size: 55px;
-  }
-  .hs h1 {
-    font-size: 73px;
-  }
-  .hs span {
-    font-size: 55px;
-  }
-  .buttons {
-    gap: 80px;
-    margin-top: 10px;
-  }
-  .button:hover {
-    transform: scale(1.15);
-  }
-}
-
-/* Tablet and small laptop (up to 700px) */
-@media only screen and (max-width: 700px) {
-  .hs {
-    padding-bottom: 1px;
-  }
-  .hs h2 {
-    font-size: 35px;
-  }
-  .hs h1 {
-    font-size: 43px;
-  }
-  .hs span {
-    font-size: 35px;
-  }
-  .button:hover {
-    transform: scale(1.15);
-  }
-}
-
-/* Phones and small devices (up to 550px) */
-@media only screen and (max-width: 550px) {
-  .hs {
-    padding-bottom: 1px;
-  }
-  .hs h2 {
-    font-size: 28px;
-  }
-  .hs h1 {
-    font-size: 34px;
-  }
-  .hs span {
-    font-size: 28px;
-  }
-  .buttons {
-    gap: 12px;
-    margin-top: 10px;
-    transition: 1s;
-  }
-  .button:hover {
-    transform: scale(1.1);
-  }
-}
-
-/* Very small screens (up to 430px) */
-@media only screen and (max-width: 430px) {
-  .hs h2 {
-    font-size: 1.3em;
-  }
-  .hs h1 {
-    font-size: 1.7em;
-  }
-  .hs span {
-    font-size: 1.3em;
-  }
-} 
-.about{
+.about {
+  margin: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -369,51 +183,50 @@ main {
   overflow: hidden;
 }
 
-.sect-header{
+.sect-header {
   text-align: center;
   font-size: 80px;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
 }
 
-#info{
-  background-color: var(--textColor2);
+#info {
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   width: max-content;
   margin: auto;
 }
 
 .a-card {
- width: 99%;
- height: 60px;
- border-radius: 10px;
- background: var(--bg2);
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
-}
-.a-card span{
-    font-size: 30px;
-    color: var(--textColor);
+  width: 99%;
+  height: 60px;
+  border-radius: 10px;
+  background: linear-gradient(#000033, #00004d, #00004d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.a-card span {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
 
 #sectRow {
   width: 100%;
   display: flex;
-  flex-direction: row;    
-  justify-content: center; 
-  align-items: center;    
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 10px;
   gap: 20px;
 }
 
-
 .sectcard {
   width: 270px;
   height: 304px;
-  background: var(--textColor3);
+  background: #000068;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -427,76 +240,77 @@ main {
   transition: 1s;
 }
 
-.sectcard:hover{
+.sectcard:hover {
   scale: 1.1;
 }
 
-.sectcard p  {
+.sectcard p {
   z-index: 1;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   text-align: center;
   white-space: wrap;
 }
 
-
-
 .sectcard span,
 .sectcard i {
   z-index: 1;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
   font-size: 2.5em;
 }
 
 .sectcard::before {
   content: '';
   position: absolute;
-  width:  100%;
-  background-image: var(--bg3);
+  width: 100%;
   height: 130%;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
   animation: rotBGimg 3s linear infinite;
   transition: all 1s linear;
 }
 
 @keyframes rotBGimg {
-  from { transform: rotate(0deg);  }
-  to   { transform: rotate(360deg); width: 50%; }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    width: 50%;
+  }
 }
 
 .sectcard::after {
   content: '';
   position: absolute;
-  background: var(--bg2);
+  background: linear-gradient(#000033, #00004d, #00004d);
   inset: 5px;
   border-radius: 15px;
 }
 
-.middle{
+.middle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 130px;
 }
 
-.middle span{  
+.middle span {
   z-index: 1;
-  color: var(--textColor2);
+  color: rgb(255, 255, 255);
   font-size: 1.5em;
   text-align: center;
   white-space: wrap;
 }
 
-.cardFooter{
+.cardFooter {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
 }
 
-.cardFooter a{
-  font-size: 2px;
-  background-color: var(--textColor2);
+.cardFooter a {
+  background-color: rgb(255, 255, 255);
   z-index: 1;
   color: rgb(0, 0, 0);
   font-size: 1.5em;
@@ -509,51 +323,50 @@ main {
   margin: 10px;
 }
 
-
-.cardFooter a:hover{
+.cardFooter a:hover {
   scale: 1.2;
 }
 
+/* =============================
+   📌 Footer
+   ============================= */
 
-
-
-
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg4);
+  background-color: black;
   padding: 10px;
   font-size: 30px;
   overflow: hidden;
   width: 100%;
 }
 
-footer span{
-  color: var(--buttons2);
+footer span {
+  color: rgb(255, 255, 255);
 }
 
-footer span span{
-  color: var(--textColor2);
+footer span span {
+  color: rgb(255, 255, 255);
 }
 
-#sm{
-  background-color: var(--bg4);
-    color: var(--buttons2);
-    font-size: 30px;
-    width: 190px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 100px;
-    transition: 1s;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#sm {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  width: 190px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 100px;
+  transition: 1s;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#sm:hover{
+#sm:hover {
   scale: 1.1;
-    background-color: var(--buttons2);
-    color: var(--bg4);
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
