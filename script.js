@@ -1,8 +1,8 @@
-// الحصول على الزر وجسم الصفحة
+
 const theameSwitch = document.getElementById("theameSwitch");
 const body = document.body;
 
-// عند تحميل الصفحة، نحط الوضع السابق من Local Storage
+
 window.addEventListener("DOMContentLoaded", () => {
     if(localStorage.getItem("theme") === "light") {
         body.classList.add("lightmode");
@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// عند الضغط على الزر
+
 theameSwitch.addEventListener("click", () => {
     body.classList.toggle("lightmode");
 

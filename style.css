@@ -599,12 +599,12 @@ footer span span{
 
 .lightmode .sectcard::before {
   background-image: var(--bg3);
-  animation: rotateBGLight 5s linear infinite;
+  animation: rotateBGLight 10s linear infinite;
 }
 
 @keyframes rotateBGLight {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to { transform: rotate(540deg); }
 }
 
 .lightmode .sectcard::after {
@@ -637,4 +637,7 @@ footer span span{
 .lightmode #sm:hover {
   background-color: var(--bg);
   color: var(--textColor3);
+}
+.lightmode#hello{
+  color: #f0f0f0;
 }
