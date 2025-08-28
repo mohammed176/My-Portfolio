@@ -500,9 +500,6 @@ main {
 }
 
 
-
-
-
 footer{
   display: flex;
   justify-content: center;
@@ -541,6 +538,10 @@ footer span span{
   scale: 1.1;
   background-color: var(--buttons2);
   color: var(--bg4);
+}
+
+.info2{
+  color: #f0f0f0;
 }
 
 /* ===== Light Mode ===== */
@@ -620,7 +621,7 @@ footer span span{
 }
 
 .lightmode .info2{
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .lightmode footer {
