@@ -25,3 +25,5 @@ theameSwitch.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 });
+
+    
