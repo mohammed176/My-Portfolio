@@ -1,4 +1,3 @@
-
 const theameSwitch = document.getElementById("theameSwitch");
 const body = document.body;
 
@@ -25,5 +24,3 @@ theameSwitch.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 });
-
-    
