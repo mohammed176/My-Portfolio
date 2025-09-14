@@ -1,66 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta name="author" content="Mohamed Abdullah Elbawabe">
   <meta name="description" content="Hello I am Mohamed Abdullah . A student in ISchool . And this is my portfolio which is made by html and css and javascript and I hope you like  hope the portfolio.">
   <meta name="keywords" content="Mohammed abdalla , mohammed , ischool student , mohammed elbawwabe , mohamed Abdullah elbawabe , child front end devoloper , a student ">
-  <meta name="keywords" content="#">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  
-  <title>M-DEV</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=111">
+  <title>M-Tech</title>
   <link rel="stylesheet" href="style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
-    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-
-  <link rel="icon" href="IMGS/Preview-removebg-preview (1).png">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="IMGS/Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body class="lightmode">
 
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
   <div class="container">
-    <!-- اللوجو -->
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="IMGS/Preview-removebg-preview (1).png" alt="Brand" width="50" id="logo">
+      <img src="IMGS/Logo.png" alt="Brand" width="50" id="logo">
     </a>
 
-    <!-- زرار القائمة للموبايل -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarScroll" aria-controls="navbarScroll"
             aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- اللينكات + الأزرار -->
     <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
-      
-      <!-- اللينكات متوسّطة -->
       <ul class="navbar-nav mb-2 mb-lg-0 text-center" id="ul-nav">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html" data-ar="الرئيسية">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-ar="عنّي">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" data-ar="المهارات">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" data-ar="المشاريع">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates" data-ar="الشهادات">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-ar="تواصل معي">Contact</a></li>
       </ul>
 
-      <!-- الأزرار على اليمين -->
       <ul class="navbar-nav ms-lg-auto" id="sun-lang">
         <li class="nav-item me-2">
           <button type="button" class="btn btn-light">عربي</button>
@@ -75,150 +53,115 @@
   </div>
 </nav>
 
-
-
-  <main>
-    <div class="main-elements">
-      <div class="hs">
-        <h2>Hello, I am Mohamed</h2>
-        <h1>Student with ISchool</h1>
-        <span>Welcome to my portfolio</span>
-      </div>
-      <div class="buttons">
-        <div class="button">
-          <i class="fa-brands fa-whatsapp" id="hello"></i>
-          <a href="https://wa.link/g9q2c1" target="_blank" rel="noopener">Let's Talk</a>
-        </div>
-        <div class="button">
-          <i class="fa-solid fa-eye" id="hello"></i>
-          <a href="#projects">Projects</a>
-        </div>
-      </div>
+<main>
+  <div class="main-elements">
+    <div class="hs">
+      <h2 data-ar="مرحباً، أنا محمد">Hello, I am Mohamed</h2>
+      <h1 data-ar="طالب في ISchool">Student with ISchool</h1>
+      <span data-ar="مرحباً بكم في معرض أعمالي">Welcome to my portfolio</span>
     </div>
-  </main>
-<section class="about" id="about" style="width: 99%;"> 
-  <h1 class="sect-header text-center mb-4" >About</h1>
-  <div class="card p-4 w-100 mx-auto" style=" border-radius: 12px;">
-    <div class="card-body d-flex flex-column align-items-center justify-content-center">
-      <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d);">
-        <span class="h3 text-white">About me</span>
+    <div class="buttons">
+      <div class="button">
+        <i class="fa-brands fa-whatsapp" id="hello"></i>
+        <a href="https://wa.link/g9q2c1" target="_blank" rel="noopener" data-ar="تحدث معي">Let's Talk</a>
       </div>
-      <div class="row w-100 g-3 mb-3">
-        <div class="col-12 col-md-8">
-          <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d);">
-            <span class="h4 text-white fs-6">
-              <span>Name</span><span>:</span><span> Mohamed Abdullah</span>
-            </span>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d);">
-            <span class="h4 text-white fs-6">
-              <span>Age</span><span>:</span><span> 13</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="row w-100 g-3 mb-3">
-        <div class="col-12 col-md-5">
-          <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d);">
-            <span class="h4 text-white fs-6">
-              <span>TEL</span><span>:</span><span> +966 57 741 4624</span>
-            </span>
-          </div>
-        </div>
-        <div class="col-12 col-md-7">
-          <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d); overflow-x:auto;">
-            <span class="h4 text-white fs-6">
-              <span>Email</span><span>:</span><span> Mohamed.1029389@gmail.com</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="card-header rounded mb-4 w-100 text-center fs-6" style=" background: linear-gradient(#000033, #00004d, #00004d);">
-        <span class="h4 text-white fs-6">
-          <span>Job</span><span>:</span><span>student</span>
-        </span>
+      <div class="button">
+        <i class="fa-solid fa-eye" id="hello"></i>
+        <a href="#projects" data-ar="المشاريع">Projects</a>
       </div>
     </div>
   </div>
+</main>
+
+<section class="about" id="about">
+  <h1 class="sect-header text-center mb-4" data-ar="عنّي">About</h1>
+  <div class="about-container">
+    <div class="about-img">
+      <img id="logoPng" style="max-width:650px;" src="IMGS/Logo2.png" alt="Mohammed">
+    </div>
+    <div class="about-text">
+      <h1 class="text-center" data-ar="معلومات عني">About Me</h1>
+      <h3 class="text-center" data-ar="محمد – مطور واجهات أمامية">Mohammed – Front end Developer</h3>
+      <p class="text-center" data-ar="أنا محمد، مطور واجهات أمامية متحمس. أقوم ببناء مواقع حديثة، متجاوبة وتفاعلية. هدفي دمج الإبداع مع التكنولوجيا لتقديم حلول رقمية فعّالة تُحوّل الأفكار إلى واقع.">
+        I’m <strong>Mohammed</strong>, a passionate web developer. I build modern, responsive, 
+        and interactive websites. My goal is to combine creativity with technology 
+        to deliver efficient digital solutions that bring ideas to life.
+      </p>
+    </div>
+  </div>
 </section>
+
 <section class="services" id="skills">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-  <h1 class="sect-header text-center mb-4">Skills</h1>
-  <a href="skills.html" id="sm">Show more</a>
-  <div id="sectRow">
-    <div class="sectcard">
-      <i class="fa-brands fa-html5"></i>
-      <span>HTML</span>
-      <p>I can make good HTML structure for websites</p>
-    </div>
-
-    <div class="sectcard">
-      <i class="fa-brands fa-css3-alt"></i>
-      <span>CSS</span>
-      <p>I can make good styling for the wed site elements</p>
-    </div>
-
-    <div class="sectcard">
-      <i class="fa-brands fa-js"></i>
-      <span>JS</span>
-      <p>I can make  website dynamic and inter active</p>
+    <h1 class="sect-header text-center mb-4" data-ar="المهارات">Skills</h1>
+    <a href="skills.html" id="sm" data-ar="عرض المزيد">Show more</a>
+    <div id="sectRow">
+      <div class="sectcard">
+        <i class="fa-brands fa-html5"></i>
+        <span data-ar="HTML">HTML</span>
+        <p data-ar="أستطيع إنشاء هيكل HTML جيد للمواقع">I can make good HTML structure for websites</p>
+      </div>
+      <div class="sectcard">
+        <i class="fa-brands fa-css3-alt"></i>
+        <span data-ar="CSS">CSS</span>
+        <p data-ar="أستطيع تنسيق عناصر الموقع بشكل جيد">I can make good styling for the wed site elements</p>
+      </div>
+      <div class="sectcard">
+        <i class="fa-brands fa-js"></i>
+        <span data-ar="JS">JS</span>
+        <p data-ar="أستطيع جعل الموقع ديناميكي وتفاعلي">I can make  website dynamic and inter active</p>
+      </div>
     </div>
   </div>
-    
 </section>
+
 <section id="projects">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-  <h1 class="sect-header text-center mb-4" >Projects</h1>
-  <a href="projects.html" id="sm">Show more</a>
-   <div id="sectRow">
+    <h1 class="sect-header text-center mb-4" data-ar="المشاريع">Projects</h1>
+    <a href="projects.html" id="sm" data-ar="عرض المزيد">Show more</a>
+    <div id="sectRow">
       <div class="sectcard">
         <i class="fa-brands fa-js"></i>
         <div class="middle">
-          <span>Clock</span>
+          <span data-ar="الساعة">Clock</span>
           <span>JS</span>
         </div>
         <div class="cardFooter">
-          <a href="Clock/index.html" target="_blank">open</a>
-          <a href="READ/index.html" target="_blank">Read</a>
+          <a href="Clock/index.html" target="_blank" data-ar="فتح">open</a>
+          <a href="READ/index.html" target="_blank" data-ar="قراءة">Read</a>
         </div>
       </div>
-
       <div class="sectcard">
         <i class="fa-brands fa-js"></i>
         <div class="middle">
-          <span>Flipper</span>
+          <span data-ar="Flipper">Flipper</span>
           <span>JS</span>
         </div>
         <div class="cardFooter">
-          <a href="Flipper/index.html" target="_blank">open</a>
-          <a href="READ/index2.html" target="_blank">Read</a>
+          <a href="Flipper/index.html" target="_blank" data-ar="فتح">open</a>
+          <a href="READ/index2.html" target="_blank" data-ar="قراءة">Read</a>
         </div>
       </div>
-
       <div class="sectcard">
         <i class="fa-brands fa-js"></i>
         <div class="middle">
-          <span>counter</span>
+          <span data-ar="العداد">counter</span>
           <span>JS</span>
         </div>
         <div class="cardFooter">
-          <a href="Counter/index.html" target="_blank">open</a>
-          <a href="READ/index3.html" target="_blank">Read</a>
+          <a href="Counter/index.html" target="_blank" data-ar="فتح">open</a>
+          <a href="READ/index3.html" target="_blank" data-ar="قراءة">Read</a>
         </div>
       </div>
     </div>
+  </div>
 </section>
+
 <section id="certificates">
   <div class="container">
     <div class="row">
       <div class="col-12">
-  <h1 class="sect-header text-center mb-4">certificates</h1>
+  <h1 class="sect-header text-center mb-4" data-ar="الشهادات">certificates</h1>
   <div id="sectRow">
       <div class="sectcard">
         <img src="Certificates/M3_ Web Development with HTML & CSS Certificate.png" width="200" style="z-index: 1;">
@@ -226,8 +169,8 @@
           <span>M3:HTML&CSS</span>
         </div>
         <div class="cardFooter">
-          <a href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 90px;">open</a>
-          <a download="Certificate-1" href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 110px; font-size: 20px;">download</a>
+          <a href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 90px;" data-ar="فتح">open</a>
+          <a download="Certificate-1" href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 110px; font-size: 20px;" data-ar="تحميل">download</a>
         </div>
       </div>
 
@@ -238,7 +181,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-    <h1 class="sect-header text-center mb-4" >Contact</h1>
+    <h1 class="sect-header text-center mb-4" data-ar="تواصل معي">Contact</h1>
     <div id="sectRow">
       <div class="sectcard">
         <i class="fa-solid fa-envelope" style="z-index: 1;"></i>
@@ -249,15 +192,17 @@
       <div class="sectcard">
         <i class="fa-solid fa-mobile" style="z-index: 1; font-size: 30px;"></i>
         <div class="cardFooter2" style="z-index: 1;">
-          <span style="z-index: 1;  font-size: 20px; text-decoration: none;  " class="info2">+966 577414624</span>
+          <span style="z-index: 1;  font-size: 20px; text-decoration: none;" dir="ltr" class="info2" >+966 577414624</span>
         </div>
       </div>
       </div>
     </div>
 </section>
+
 <footer class="footer">
   <span><span>@</span>Mohamed Abdullah</span>
 </footer>
+
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

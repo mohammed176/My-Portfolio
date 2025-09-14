@@ -1,0 +1,41 @@
+<section id="certificates">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+  <h1 class="sect-header text-center mb-4">certificates</h1>
+  <div id="sectRow">
+      <div class="sectcard">
+        <img src="Certificates/M3_ Web Development with HTML & CSS Certificate.png" width="200" style="z-index: 1;">
+        <div class="middle">
+          <span>M3:HTML&CSS</span>
+        </div>
+        <div class="cardFooter">
+          <a href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 90px;">open</a>
+          <a download="Certificate-1" href="Certificates/M3_ Web Development with HTML & CSS Certificate.png" target="_blank" style="width: 110px; font-size: 20px;">download</a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+    <h1 class="sect-header text-center mb-4" >Contact</h1>
+    <div id="sectRow">
+      <div class="sectcard">
+        <i class="fa-solid fa-envelope" style="z-index: 1;"></i>
+        <div class="cardFooter2" style="z-index: 1;">
+          <a href="mailto:mohamed@gmail.com" style="z-index: 1;  font-size: 17px; text-decoration: none; " class="info2">mohamed.1029389@gmail.com</a>
+        </div>
+      </div>
+      <div class="sectcard">
+        <i class="fa-solid fa-mobile" style="z-index: 1; font-size: 30px;"></i>
+        <div class="cardFooter2" style="z-index: 1;">
+          <span style="z-index: 1;  font-size: 20px; text-decoration: none;  " class="info2">+966 577414624</span>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
