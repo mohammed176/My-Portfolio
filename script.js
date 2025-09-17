@@ -9,32 +9,34 @@ window.addEventListener("DOMContentLoaded", () => {
     // Theme
     if(localStorage.getItem("theme") === "light") {
         body.classList.add("lightmode");
-        theameSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        if(theameSwitch) theameSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
     } else {
         body.classList.remove("lightmode");
-        theameSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        if(theameSwitch) theameSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
     }
 
     // Language
     if(localStorage.getItem("lang") === "ar") {
         translateToArabic(false);
+        if(langBtn) langBtn.innerHTML="EN";
     } else {
         translateToEnglish(false);
+        if(langBtn) langBtn.innerHTML="عربي";
     }
 });
 
-theameSwitch.addEventListener("click", () => {
-    body.classList.toggle("lightmode");
-    if(body.classList.contains("lightmode")) {
-        theameSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
-        localStorage.setItem("theme", "light");
-
-    } else {
-        theameSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
-        localStorage.setItem("theme", "dark");
-
-    }
-});
+if(theameSwitch){
+    theameSwitch.addEventListener("click", () => {
+        body.classList.toggle("lightmode");
+        if(body.classList.contains("lightmode")) {
+            theameSwitch.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            localStorage.setItem("theme", "light");
+        } else {
+            theameSwitch.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            localStorage.setItem("theme", "dark");
+        }
+    });
+}
 
 // --- Language Functions ---
 function translateToArabic(save = true) {
@@ -54,11 +56,14 @@ function translateToEnglish(save = true) {
     if(save) localStorage.setItem("lang", "en");
 }
 
-// Toggle language عند الضغط
-langBtn.addEventListener("click", () => {
-    if(localStorage.getItem("lang") === "ar") {
-        translateToEnglish();
-    } else {
-        translateToArabic();
-    }
-});
+if(langBtn){
+    langBtn.addEventListener("click", () => {
+        if(localStorage.getItem("lang") === "ar") {
+            translateToEnglish();
+            langBtn.innerHTML="عربي";
+        } else {
+            translateToArabic();
+            langBtn.innerHTML="EN";
+        }
+    });
+}
